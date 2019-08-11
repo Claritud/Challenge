@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random User Page</title>
+    <link rel="stylesheet" href="styles/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="full-page">
+        <!-------------------------- HOME ----------------------------->
+        <main id="random-users">
+            <div class="users">
+                <div class="page-title">
+                    <h1 id="title">Random User Generator</h1>
+                </div>
+                <ul class="users-list" id="users-container">
+                    <li class="user-item">
+                        <div class="user-item-picture">
+                            <img src="" alt="" class="user-item-img">
+                        </div>
+                        <div class="user-item-content">
+                            <h3 class="user-name"></h3>
+                            <p class="user-city-country"></p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="more-users">
+                    <button class="button" id="button-load-more">LOAD MORE RESULTS</button>
+                    <a href="#full-page"><i class="fas fa-arrow-circle-up"></i></a>
+                </div>
+            </div>
+        </main>
+        <!-------------------------- POPUP ----------------------------->
+        <div id="user-popup" class="hide-popup">
+            <div class="user-popup-box">
+                <section class="user">
+                    <div class="user-container">
+                        <header class="user-header">
+                            <div class="user-wrap">
+                                <div class="user-picture">
+                                    <img src="" alt="" id="popup-user-picture">
+                                </div>
+                                <div class="popup-title">
+                                    <h1 id="full-name">full name</h1>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="user-main">
+                            <div class="user-wrap-main">
+                                <div class="user-info">
+                                    <div class="user-details">
+                                        <h3>Email</h3>
+                                        <p id="email-adress"></p>
+                                        <h3>Username</h3>
+                                        <p id="user-name"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="user-popup-close">X</div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
