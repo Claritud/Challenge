@@ -20,7 +20,6 @@ const randomUsersHome = () => {
     (`https://randomuser.me/api/?page=${currentPage}&results=50&seed=abc`)
     .then(response => response.json() )
     .then (data => {
-        console.log(data);
         if (currentPage === 1) {
             usersContainer.innerHTML = '';
         }
@@ -55,7 +54,6 @@ closePopUp.onclick = () => {
 }
 
 titleHome.onclick = () => {
-    usersContainer.innerHTML = '';
     currentPage = 1; 
     randomUsersHome();
 }
